@@ -1,0 +1,60 @@
+:root{
+  --accent: #8a6d3b;
+  --bg: #fafafa;
+  --text: #444;
+  --heading-color: #222;
+  --nav-bg: rgba(255,255,255,0.98);
+  --radius: 12px;
+  --max-width: 1200px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Lato', sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--heading-color); }
+
+.container{ max-width:var(--max-width); margin:0 auto; padding:0 24px; }
+
+/* NAVIGATION */
+.topbar{ position:fixed; top:20px; width:100%; z-index:1200; display:flex; justify-content:center; }
+.nav-panel{ 
+    background:var(--nav-bg); padding:10px 25px; border-radius:40px; 
+    box-shadow: var(--shadow); display:flex; align-items:center; backdrop-filter: blur(10px);
+}
+.nav-links{ display:flex; gap:15px; }
+.nav-links a{ 
+    text-decoration:none; color:var(--heading-color); font-weight:700; font-size:0.8rem; 
+    text-transform: uppercase; letter-spacing: 1px; padding:8px 15px; transition: 0.3s;
+}
+.nav-links a:hover, .nav-links a.active{ color:var(--accent); }
+
+/* HERO SECTIONS */
+.hero-mini{
+  height: 50vh; background-size: cover; background-position: center;
+  display: flex; align-items: center; justify-content: center; color: #fff; text-align: center;
+  position: relative; margin-bottom: 50px;
+}
+.hero-mini::after{ content:""; position:absolute; inset:0; background:rgba(0,0,0,0.4); }
+.hero-content{ position: relative; z-index: 2; }
+
+/* SEZIONI CONTENT */
+section{ padding:60px 0; }
+.media{ display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:center; margin-bottom: 60px; }
+.media img{ width:100%; height:450px; object-fit:cover; border-radius:var(--radius); box-shadow:var(--shadow); }
+.reverse{ direction: rtl; } .reverse > div { direction: ltr; }
+
+/* FOOTER */
+footer{ padding:60px 0; text-align:center; background:#1a1a1a; color:#888; margin-top: 50px;}
+footer strong { color: #fff; }
+
+@media (max-width:900px){
+  .nav-links{ display:none; }
+  .media{ grid-template-columns: 1fr; }
+}
