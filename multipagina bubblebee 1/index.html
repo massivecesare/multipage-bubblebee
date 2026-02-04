@@ -2,44 +2,102 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>BUBBLEBEE | Luxury Retreat Abruzzo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BubbleBee - Luxury Retreat & Glamping in Abruzzo. Esperienze uniche tra mare e montagna.">
+    <title>BUBBLEBEE | Home - Luxury Retreat Abruzzo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="topbar">
         <nav class="nav-panel">
-            <a href="index.html" style="font-family:'Playfair Display'; font-weight:900; color:var(--accent); margin-right:20px;">BUBBLEBEE</a>
+            <a href="index.html" style="text-decoration:none; font-weight:900; color:var(--accent); font-family:'Playfair Display'; font-size:1.2rem;">BUBBLEBEE</a>
+            
             <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="camere-e-bolle.html">Soggiorni</a>
-                <a href="esperienze.html">Esperienze</a>
+                <a href="camere.html">Camere</a>
+                <a href="bolle.html">Bolle</a>
+                <a href="eventi.html">Eventi</a>
+                <a href="prodotti.html">Prodotti</a>
                 <a href="dintorni.html">Dintorni</a>
-                <a href="contatti.html">Contatti</a>
+                <a href="dove-siamo.html">Dove Siamo</a>
             </div>
         </nav>
     </div>
 
-    <header class="hero-mini" style="height:100vh; background-image:url('https://images.unsplash.com/photo-1445964047600-cdbdb873673d?q=80&w=1600');">
-        <div class="hero-content">
-            <h1 style="font-size:4rem; margin:0;">BUBBLEBEE</h1>
-            <p>Riconnettiti con la natura nel cuore dell'Abruzzo</p>
+    <header class="hero-page" style="height: 100vh; background-image: url('https://images.unsplash.com/photo-1445964047600-cdbdb873673d?q=80&w=1600&auto=format&fit=crop');">
+        <div style="position: relative; z-index: 2;">
+            <h1 style="font-size: clamp(3rem, 8vw, 6rem);">BUBBLEBEE</h1>
+            <p style="text-transform: uppercase; letter-spacing: 3px; font-weight: 300;">Luxury Retreat & Nature Sanctuary</p>
         </div>
     </header>
 
-    <section class="container">
-        <div class="media">
-            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=1200" alt="Luxury">
-            <div>
-                <h2>Un'esperienza fuori dal tempo</h2>
-                <p>Situato a Sant'Eusanio del Sangro, BubbleBee non è solo un soggiorno, è un rifugio sensoriale tra le colline e il mare.</p>
-                <a href="camere-e-bolle.html" style="color:var(--accent); font-weight:bold;">Scopri le nostre sistemazioni →</a>
+    <main class="container">
+        
+        <section style="text-align: center; margin-bottom: 80px;">
+            <h2 style="font-size: 2.5rem;">Un rifugio tra le stelle e le colline</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; color: #666;">
+                Situato nel cuore pulsante dell'Abruzzo, a Sant'Eusanio del Sangro, BubbleBee offre un'esperienza di soggiorno che fonde l'eleganza del design contemporaneo con la libertà della natura selvaggia.
+            </p>
+        </section>
+
+        <div class="gallery" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            
+            <div class="card" style="text-align: center;">
+                <a href="camere.html" style="text-decoration:none; color:inherit;">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=600" alt="Le Camere">
+                    <h3 style="margin-top:15px;">Le Camere Luxury</h3>
+                    <p>Eleganza moderna e comfort assoluto.</p>
+                </a>
             </div>
+
+            <div class="card" style="text-align: center;">
+                <a href="bolle.html" style="text-decoration:none; color:inherit;">
+                    <img src="IMG_2003.jpeg" alt="Le Bolle">
+                    <h3 style="margin-top:15px;">Le Bolle Trasparenti</h3>
+                    <p>Dormire sotto il firmamento, immersi nel bosco.</p>
+                </a>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <a href="eventi.html" style="text-decoration:none; color:inherit;">
+                    <img src="IMG_3024.png" alt="Eventi">
+                    <h3 style="margin-top:15px;">Eventi & Workshop</h3>
+                    <p>Riconnettiti con la terra attraverso le nostre esperienze.</p>
+                </a>
+            </div>
+
         </div>
-    </section>
+
+        <hr style="margin: 80px 0; border: 0; border-top: 1px solid #eee;">
+
+        <section style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2>I Sapori del Territorio</h2>
+                <p>Olio extravergine d'oliva, vini d'eccellenza e miele artigianale. Scopri la nostra selezione di prodotti locali nati dalla passione per l'Abruzzo.</p>
+                <a href="prodotti.html" style="color: var(--accent); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--accent);">Vedi lo shop →</a>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800" alt="Prodotti Locali" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow);">
+            </div>
+        </section>
+
+    </main>
 
     <footer>
-        <p>&copy; 2026 <strong>BUBBLEBEE</strong> Luxury Retreat. Via Castellata 6, Abruzzo.</p>
+        <div class="container" style="padding: 0;">
+            <p>&copy; 2026 <strong>BUBBLEBEE</strong> Luxury Retreat.</p>
+            <p>Sant’Eusanio del Sangro, VIA CASTELLATA 6 (CH)</p>
+            <div style="margin-top: 20px;">
+                <a href="dove-siamo.html" style="color: #fff; margin-right: 15px;">Mappa</a>
+                <a href="mailto:info@bubblebee.it" style="color: #fff;">Contatti</a>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
